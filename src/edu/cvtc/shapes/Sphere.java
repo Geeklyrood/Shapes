@@ -27,26 +27,21 @@ public class Sphere extends Shape {
 	public void setRadius(float radius) {
 		this.radius = radius;
 	}
-	
-	public float getVolume() {
-		// Equation for volume  V=4/3 pi r cubed
-		return (float) (4.0f / 3.0f * Math.PI * (radius * radius * radius));
-	}
 
 	@Override
-	float surfaceArea() {
+	public float surfaceArea() {
 		// Equation for surface area
 		return (float) (4.0f * Math.PI * (radius * radius));
 	}
 
 	@Override
-	float volume() {
+	public float volume() {
 		// Equation for volume 
 		return (float) (4.0f / 3.0f * Math.PI * (radius * radius * radius));
 	}
 
 	@Override
-	String render() {
+	public String render() {
 		// Create string to show later
 		return "The surface area of a sphere is " + surfaceArea() + " and the volume is " + volume();
 	}

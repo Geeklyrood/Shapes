@@ -41,19 +41,19 @@ public class Cylinder extends Shape {
 	}
 
 	@Override
-	float surfaceArea() {
+	public float surfaceArea() {
 		// Equation for surface area 
 		return (float) (2.0f * (Math.PI * radius * height) + 2.0f * (Math.PI * (radius * radius)));
 	}
 
 	@Override
-	float volume() {
+	public float volume() {
 		// Equation for volume 
 		return (float) (Math.PI * (getRadius() * getRadius()) * height);
 	}
 
 	@Override
-	String render() {
+	public String render() {
 		// Create string to show later
 		return "The surface area of a Cylinder is " + surfaceArea() + " and the volume is " + volume();	
 	}

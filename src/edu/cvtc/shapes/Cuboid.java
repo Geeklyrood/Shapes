@@ -57,19 +57,19 @@ public class Cuboid extends Shape {
 	}
 
 	@Override
-	float surfaceArea() {
+	public float surfaceArea() {
 		// Equation to get surface area 
 		return 2.0f * (getWidth() * getDepth() + getDepth() * getHeight() + getHeight() * getWidth());
 	}
 
 	@Override
-	float volume() {
+	public float volume() {
 		// Equation to get volume
 		return getWidth() * getDepth() * getHeight();
 	}
 
 	@Override
-	String render() {
+	public String render() {
 		// Create string to show later
 		return "The surface area of a Cuboid is " + surfaceArea() + " and the volume is " + volume();
 	}
